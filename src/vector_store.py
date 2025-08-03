@@ -8,7 +8,7 @@ load_dotenv()
 
 
 class VectorStoreBuilder:
-    def __init__(self, csv_path: str, persistent_dir: str) -> None:
+    def __init__(self, csv_path: str, persistent_dir:str = "chroma_db") -> None:
         self.csv_path = csv_path
         self.persistent_dir = persistent_dir
         self.embedding = OpenAIEmbeddings(model='text-embedding-3-large')
