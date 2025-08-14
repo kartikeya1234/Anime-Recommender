@@ -1,6 +1,6 @@
 from langchain.chains import RetrievalQA
 from langchain_openai import ChatOpenAI
-from src.prompt_template import get_anime_prompt
+from prompt_template import get_anime_prompt
 
 
 class AnimeRecommender:

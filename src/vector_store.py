@@ -29,4 +29,4 @@ class VectorStoreBuilder:
         db.persist()
 
     def load_vector_store(self):
-        return Chroma(persist_directory=self.persistent_dir)
+        return Chroma(persist_directory=self.persistent_dir, embedding_function=self.embedding)
